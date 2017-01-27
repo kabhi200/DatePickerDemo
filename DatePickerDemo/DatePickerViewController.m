@@ -2,9 +2,6 @@
 //  DatePickerViewController.m
 //  DatePickerDemo
 //
-//  Created by Abhishek Kumar on 27/01/17.
-//  Copyright © 2017 Abhishek Kumar. All rights reserved.
-//
 
 #import "DatePickerViewController.h"
 #import "DatePickerView.h"
@@ -59,9 +56,13 @@
 
 }
 
-
 #pragma mark - DatePickerViewDelegate
 
+/**
+ DatePickerViewDelegate method to get the selected date.
+
+ @param date the NSDate object
+ */
 - (void)pickerDidSelectDate:(NSDate *)date{
     NSInteger year = [date year];
     NSInteger month = [date month];
